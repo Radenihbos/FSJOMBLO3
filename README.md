@@ -1,11 +1,17 @@
-# File-Sharing
+# FileSJomblo
 
 Bot Telegram untuk menyimpan Posting atau File yang dapat Diakses melalui Link Khusus.
+Saya Kira Ini Akan Bermanfaat Bagi Banyak Orang.. 😇.
 
-<img src="https://telegra.ph/file/c628278158186a91644c5.jpg">
 
+### Features
+- Sepenuhnya dapat dicustom.
+- Dapat di-deploy di heroku & vps.
+- Pesan sambutan & Forcesub yang dapat dicustom.
+- Lebih dari satu Posting dalam Satu Link (batch).
+- Fleksibel FSUB Button bisa 1 button atau 2 button menyesuaikan dengan var yang di isi.
 
-### Setup Repo ini join 3 ch ngentod
+### Setup
 
 - Tambahkan bot ke Channel Database dengan semua izin admin
 - Tambahkan bot ke Channel ForceSub tambahkan bot sebagai ADMIN
@@ -14,17 +20,17 @@ Bot Telegram untuk menyimpan Posting atau File yang dapat Diakses melalui Link K
 ##
 ### Installation
 #### Deploy on Heroku
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kyuraxp/Private"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
-
-
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Radenihbos/FSPRIVAT"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 #### Deploy in your VPS
 ````bash
-git clone https://github.com/ReyyNada/ReyyFileSharing3
-cd File-Sharing
+git clone https://github.com/Radenihbos/FSPRIVAT
+cd FileSJomblo
 pip3 install -r requirements.txt
-# <Create config.py appropriately>
-python3 main.py
+cp sample_config.env config.env
+# edit config.env Anda dan isi VARS menggunakan nano config.env CTRL + S untuk menyimpan VARS Anda, 
+# gunakan CTRL + X untuk keluar dan kembali ke direktori File-Sharing-Man
+bash start
 ````
 
 ### Admin Commands
@@ -52,17 +58,16 @@ python3 main.py
 * `OWNER_ID` Masukan User ID Telegram untuk Owner BOT
 * `CHANNEL_ID` Masukan ID Channel Untuk [Channel Database] contoh:- -100xxxxxxxx
 * `ADMINS` Masukan User ID untuk mendapatkan hak Admin BOT [Hanya dapat membuat link]
-* `START_MESSAGE` Opsional: Pesan /start memulai awalan ke bot, Gunakan <a href='https://github.com/mrismanaziz/File-Sharing-Man/blob/main/README.md#start_message'>format</a> parsemode HTML 
+* `START_MESSAGE` Opsional: Pesan /start memulai awalan ke bot, Gunakan <a href='https://github.com/Radenihbos/FileSJomblo/blob/main/README.md#start_message'>format</a> parsemode HTML 
 * `FORCE_SUB_MESSAGE` Opsional: Pesan Paksa Subscribe bot, Gunakan Format parsemode HTML
-* `FORCE_SUB_CHANNEL_1` Masukan ID dari Channel Untuk Wajib Subscribenya
-* `FORCE_SUB_CHANNEL_2` Masukan ID dari Channel Untuk Wajib Subscribenya
-* `FORCE_SUB_CHANNEL_3` Masukan ID dari Channel Untuk Wajib Subscribenya
+* `FORCE_SUB_CHANNEL` Masukan ID dari Channel Untuk Wajib Subscribenya
+* `FORCE_SUB_GROUP` Masukan ID dari Group Untuk Wajib Subscribenya
+
 ### Extra Variables
 
 * `CUSTOM_CAPTION` letakkan teks teks Kustom Anda jika Anda ingin Mengatur Teks Kustom, Anda dapat menggunakan HTML dan <a href='https://github.com/mrismanaziz/File-Sharing-Man/blob/main/README.md#custom_caption'>fillings</a> untuk pemformatan (hanya untuk dokumen)
 * `DISABLE_CHANNEL_BUTTON` Masukan True untuk Nonaktifkan Tombol Berbagi Saluran, Default jika False
 
-### Fillings
 #### START_MESSAGE | FORCE_SUB_MESSAGE
 
 * `{first}` - User first name
@@ -78,7 +83,7 @@ python3 main.py
 
 
 ## Support   
-Bergabunglah di [Group Telegram ](https://www.telegram.dog/pantekyks) Untuk Dukungan/Bantuan Dan Join [Channel](https://www.telegram.dog/mahadappa) untu info Update bot.   
+Bergabunglah di [Group Telegram ](https://www.telegram.dog/jomblosuport) Untuk Dukungan/Bantuan Dan Join [Channel](https://www.telegram.dog/jombloproject) untu info Update bot.   
    
 Laporkan Bug, Berikan Permintaan Fitur Di sana.. 
 
@@ -86,5 +91,8 @@ Laporkan Bug, Berikan Permintaan Fitur Di sana..
 
 - Thanks To Dan For His Awsome [Libary](https://github.com/pyrogram/pyrogram)
 - Thanks To [CodeXBotz](https://github.com/CodeXBotz/File-Sharing-Bot)
-- Our Support Group Members
+- Thanks To [mrismanaziz](https://github.com/mrismanaziz/File-Sharing-Man/tree/master)
+
+##
+   **Berikan Bintang Repo ini jika Anda menyukainya ⭐⭐⭐⭐⭐**
 
